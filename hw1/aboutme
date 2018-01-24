@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <link href="style.css" type="text/css" rel="stylesheet">
-    <title>Shiba</title>
+    <title>About Me</title>
   </head>
   <body>
-    <h1 class=picture> Shiba Puppy </h1>
-    <p><img src="shiba.jpg" height="40%" width="40%"></p>
+    <h1 class="picture"> About Me </h1>
+    <p><img src="Andrew.jpg" height="50%" width="50%"></p>
     <p><a href="puppies.html">Back to List</a></p>
   </body>
 </html>
