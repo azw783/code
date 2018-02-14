@@ -1,24 +1,2 @@
-body {
-  background: lightgrey;
-    }
-h3 {
-  font-family: "Comic Sans MS";
-  }
-h1 {
-  font-family: "Comic Sans MS";
-  font-weight: "bold";
-  text-align: center;
-  }
-h2 {
-  font-family: "Comic Sans MS"
-  }
-.picture
-  {
-    text-align: left
-  }
-p {
-  font-family: "Comic Sans MS";
-  }
-.list li {
-  font-size: 20pt;
-   }
+div { border: solid 1px red; padding: 12px; }
+#special {font-size: 20pt;}

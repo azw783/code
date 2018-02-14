@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>KIEI 924 - Week 4</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+     <style>
+        .lead { background-color: blue; color: white; font-weight: bold; }
+      </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Week 4</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="games.html">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location.html">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="movies.html">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="weather.html">Weather</a>
+          </li>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+
+      <div class="row">
+        <div class="col">
+          <p class="lead p-3">
+            Quick Start
+          </p>
+          <ol>
+            <p>GETTING STARTED</p>
+            <li>Use the keyboard shortcut to open the Chrome Inspector.</a></li>
+            <li>Do some simple math in JavaScript.</a></li>
+            <hr><p>VARIABLES AND OBJECTS</p>
+            <li>Show an alert box that says "Hello!"</a></li>
+            <li>Use a variable to hold the result of an expression.</a></li>
+            <li>Use a variable to hold a list of things using an array.</a></li>
+            <li>Use a variable to hold a custom object.</a></li>
+            <hr><p>MODIFYING THE DOM</p>
+            <li>Use the <code>jQuery()</code> function to change the background color of the section headings.</a></li>
+            <li>Use a variable to define a function that changes the section headings to any given color.</a></li>
+            <li>Use the <code>.html()</code> function to change the text of an element on this page.</a></li>
+            <hr><p>EVENTS</p>
+            <li>When you <a href="https://www.apple.com" id="apple">click here here to go to Apple's website</a>, show an alert box instead.</a></li>
+            <li>Make a section disappear when you click on a section heading.</a></li>
+            <li>Implement the <a href="games.html">Dice game.</a>
+              <ul>
+                <li>Write a function that replaces the images with two random dice images.</li>
+                <li>Trigger the function whenever the "Click here to roll the dice" link is clicked.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Two-column Layout Starts Here -->
+
+      <div class="row">
+        <div class="col mt-5">
+          <div class="row">
+              <div class="col">
+                <p class="lead p-3">
+                  Built-In Objects
+                </p>
+
+                <ul>
+                  <li><code>window</code></li>
+                  <li><code>document</code></li>
+                  <li><code>navigator</code></li>
+                  <li><code>console</code></li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col">
+                <p class="lead p-3">
+                  Built-In Methods and Properties
+                </p>
+
+                <p>Play with the Chrome Console to get a feel for what's possible.</p>
+
+                <ul>
+                  <li><code>jQuery("selector")</code> will return an array of all elements matching the given CSS selector expression.</li>
+                  <hr>
+                  <li><code>jQuery("selector").css("property-name", "property-value")</code></li>
+                  <li><code>jQuery("selector").parent("selector")</code></li>
+                  <li><code>jQuery("selector").parents("selector")</code></li>
+                  <li><code>jQuery("selector").html("new html code")</code></li>
+                  <hr>
+                  <li><code>window.alert(...)</code></li>
+                  <li><code>window.confirm(...)</code></li>
+                  <hr>
+                  <li><code>console.debug(...)</code></li>
+                  <li><code>console.warn(...)</code></li>
+                  <li><code>console.error(...)</code></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col">
+                <p class="lead p-3">Custom Objects
+                </p>
+  <pre><code>
+  var person = { name: "Cookie Monster",
+                 favorite_color: "Blue",
+                 favorite_fruit: "Cookies",
+                 speak: function() { alert("Me want cookie!"); }
+  };
+
+  person.speak();
+  </code></pre>
+              </div>
+            </div>
+        </div>
+        <div class="col mt-5">
+          <p class="lead p-3">Cheat Sheet for Week 4
+          </p>
+
+          <ul class="mt-3">
+            <li> The <code>images/dice/</code> subfolder contains images of dice.</li>
+            <li> The <code>images/cards/</code> subfolder contains images of cards.</li>
+            <li> Use <code>let</code> or <code>const</code> to define variables.</li>
+            <li>Define functions by assigning them to variable names, like this:
+  <pre><code>
+  var f = function(arg1, arg2) {
+    // code goes here
+  } </code></pre>
+            </li>
+            <li> Given an element <code>elem</code>, you can attach a click event handler with:</li>
+              <code>elem.on("click", myFunctionName)</code>
+            <li> Event handler functions should accept one argument, the event object:</li>
+  <pre><code>
+  var myHandler = function(event) { ... } </code></pre>
+            </li>
+            <li>To prevent the browser from also responding to a click event, you can call
+               <code>event.preventDefault();</code>
+             </li>
+            <li>When inside an event handler function, you can refer to the original
+            element by using <code>jQuery(this)</code>.</li>
+            <li> To reserve a blank section of the page for your JavaScript to add HTML later, use
+            an empty <code>div</code> and give it an <code>id</code> attribute so your code can find it:
+  <pre><code>
+  &lt;div id="mydiv"&gt;&lt;/div&gt; </code></pre>
+            </li>
+            <li> Generate a random integer from 1 to 10 with: <code>Math.floor(Math.random() * 10) + 1</code></li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
